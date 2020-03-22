@@ -6,7 +6,11 @@
   "scripts": {
     "frontend": "cd frontend && npm start",
     "backend": "cd backend && npm start",
-    "start": "npm run frontend && npm run backend"
+    "instback": "cd backend && npm install",
+    "instfront": "cd frontend && npm install",
+    "inst": "npm run instfront && npm run instback",
+    "app": "npm run frontend && npm run backend",
+    "start": "npm run inst && npm run app"
   },
   "author": "",
   "license": "ISC"
