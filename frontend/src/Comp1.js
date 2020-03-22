@@ -10,7 +10,7 @@ class Comp1 extends Component {
 
 	getInfo = () => {
 		console.log('')
-		return fetch('http://localhost:3000/api/message')
+		return fetch('/api/message')
 		.then(res => res.json())
 		.then(data => this.setState({
 			info: JSON.stringify(data)
