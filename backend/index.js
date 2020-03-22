@@ -1,6 +1,9 @@
 let express = require('express');
+let cors = require('cors');
 
 let app = express();
+
+app.use(cors())
 
 app.get('/api/message', (req, res) => {
 	res.json({
