@@ -10,7 +10,7 @@
     "instfront": "cd frontend && npm install",
     "inst": "npm run instfront && npm run instback",
     "start": "cd frontend && serve -s build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd backend && npm install && cd ../frontend && npm install && npm run build && npm install serve"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd backend && npm install && cd ../frontend && npm install && npm run build && npm install -g serve"
   },
   "author": "",
   "license": "ISC"
