@@ -4,13 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "frontend": "cd frontend && npm start",
     "backend": "cd backend && npm start",
     "instback": "cd backend && npm install",
-    "instfront": "cd frontend && npm install",
-    "inst": "npm run instfront && npm run instback",
     "start": "npm run backend",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd backend && npm install && cd ../frontend && npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd backend && npm install"
   },
   "author": "",
   "license": "ISC"
