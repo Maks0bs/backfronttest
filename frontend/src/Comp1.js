@@ -10,7 +10,7 @@ class Comp1 extends Component {
 
 	getInfo = () => {
 		console.log('')
-		return fetch('/api/message')
+		return fetch('https://jwt-subdomain.herokuapp.com/api/message')
 		.then(res => res.json())
 		.then(data => this.setState({
 			info: JSON.stringify(data)
