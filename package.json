@@ -9,7 +9,7 @@
     "instback": "cd backend && npm install",
     "instfront": "cd frontend && npm install",
     "inst": "npm run instfront && npm run instback",
-    "start": "npm run frontend",
+    "start": "cd frontend && npm start",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd backend && npm install && cd ../frontend && npm install && npm run build"
   },
   "author": "",
