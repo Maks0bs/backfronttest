@@ -15,6 +15,6 @@ router.get('/message', (req, res) => {
 	})
 })
 
-app.use(subdomain('api', router));
+app.use('/api', router);
 
 app.listen(process.env.PORT || 3000);
