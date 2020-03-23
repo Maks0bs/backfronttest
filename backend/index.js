@@ -12,12 +12,4 @@ app.get('/api/message', (req, res) => {
 	})
 })
 
-console.log(path.join(__dirname, '../frontend/build'))
-
-app.use(express.static('../frontend/build'))
-app.get('*', (req, res) => {
-	console.log('test');
-	res.sendFile('index.html', {root: path.join(__dirname, '../frontend/build')});
-})
-
 app.listen(process.env.PORT || 3000);
